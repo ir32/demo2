@@ -11,4 +11,8 @@ public class MyController {
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
         return "Hello, " + name + "!";
     }
+    @GetMapping("/fetch")
+    public String fetch() {
+        return "data fetching";
+    }
 }
